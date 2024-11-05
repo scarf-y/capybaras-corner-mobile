@@ -14,6 +14,29 @@ Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. St
 <br/>
 =============== 2 ===============
 <br/>
+| Widget                       | Kegunaan                                                                                                             |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `MaterialApp`                | Root aplikasi dengan struktur Material Design, menyediakan navigasi dan tema.                                       |
+| `ThemeData`                  | Mengatur tema visual aplikasi, seperti warna, font, dan gaya lainnya.                                               |
+| `ColorScheme.fromSwatch`     | Membuat skema warna dari palet warna yang dipilih, menetapkan `primarySwatch` dan warna sekunder.                   |
+| `MyHomePage`                 | Widget yang akan menjadi halaman beranda atau home page dari aplikasi.                                              |
+| `MyApp`                      | Custom widget sebagai root aplikasi, menyusun `MaterialApp` dan pengaturan tema serta halaman awal.                 |
+| `runApp`                     | Fungsi untuk menjalankan aplikasi, menampilkan widget utama (`MyApp`) dalam hierarchy aplikasi Flutter.             |
+| `Scaffold`                   | Menyediakan struktur halaman dasar dengan `AppBar` dan `body`.                                                      |
+| `AppBar`                     | Toolbar di bagian atas halaman, menampilkan judul dan ikon aplikasi.                                                |
+| `Text`                       | Menampilkan teks statis pada layar. Digunakan untuk judul, sambutan, dan informasi lainnya.                         |
+| `Padding`                    | Menambahkan jarak di sekitar widget untuk tata letak yang lebih rapi.                                               |
+| `Column`                     | Menyusun widget secara vertikal, seperti teks dan kartu dalam halaman.                                              |
+| `Row`                        | Menyusun widget secara horizontal, seperti `InfoCard` dalam satu baris.                                             |
+| `InfoCard`                   | Custom widget yang menampilkan informasi sederhana (judul dan konten).                                              |
+| `ItemCard`                   | Custom widget untuk ikon dan teks opsional. Respon `onTap` untuk interaksi pengguna.                               |
+| `GridView.count`             | Menampilkan grid dengan jumlah kolom tetap, seperti `ItemCard` dalam 3 kolom.                                       |
+| `Card`                       | Menampilkan kotak dengan elevasi, memberikan tampilan visual untuk `InfoCard`.                                      |
+| `Material`                   | Menambahkan efek Material Design pada `ItemCard`, seperti warna latar belakang dan sudut melengkung.               |
+| `InkWell`                    | Menambahkan efek klik pada `ItemCard` dan menampilkan `SnackBar` saat ditekan.                                      |
+| `SnackBar`                   | Menampilkan pesan sementara di bagian bawah layar, sebagai respons ketika `ItemCard` ditekan.                      |
+| `MediaQuery.of(context)`     | Mengambil ukuran layar untuk menyesuaikan tampilan secara responsif.                                                |
+| `SizedBox`                   | Menambahkan jarak vertikal antara elemen-elemen dalam kolom.                                                        |
 <br/>
 =============== 3 ===============
 <br/>

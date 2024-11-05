@@ -21,15 +21,15 @@ Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. St
 =============== 4 ===============
 <br/>
 
-| Sifat                         | `const`                              | `final`                            | Variabel Instance        |
-|-------------------------------|--------------------------------------|------------------------------------|---------------------------|
-| Waktu penentuan nilai         | Compile-time                         | Run-time                           | Run-time                  |
-| Dapat berubah nilainya?       | Tidak                                | Tidak                              | Bisa (default)           |
-| Penggunaan pada variabel instance? | Tidak bisa                        | Bisa                               | Bisa                      |
-| Memerlukan kata kunci `static` untuk class-level konstanta? | Ya                                  | Tidak (tidak bisa const)  | Tidak                      |
-| Bersifat immutable (tidak dapat diubah) | Ya, mutlak (benar-benar konstan) | Ya, tetapi nilai di-set saat run-time | Bisa diubah (default)    |
-| Cocok untuk                   | Nilai konstan di seluruh aplikasi    | Nilai yang diketahui saat run-time dan hanya di-set sekali | Nilai berbeda per objek   |
-| Contoh                         | `static const double pi = 3.14;`    | `final DateTime now = DateTime.now();` | `int speed = 60;`        |
+| Sifat                         | `const`                              | `final`                            | 
+|-------------------------------|--------------------------------------|------------------------------------|
+| Waktu penentuan nilai         | Compile-time                         | Run-time                           | 
+| Dapat berubah nilainya?       | Tidak                                | Tidak                              | 
+| Penggunaan pada variabel instance? | Tidak bisa                        | Bisa                               | 
+| Memerlukan kata kunci `static` untuk class-level konstanta? | Ya                                  | Tidak (tidak bisa const)  | 
+| Bersifat immutable (tidak dapat diubah) | Ya, mutlak (benar-benar konstan) | Ya, tetapi nilai di-set saat run-time | 
+| Cocok untuk                   | Nilai konstan di seluruh aplikasi    | Nilai yang diketahui saat run-time dan hanya di-set sekali | 
+| Contoh                         | `static const double pi = 3.14;`    | `final DateTime now = DateTime.now();` |
 
 <br/>
 =============== 5 ===============

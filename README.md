@@ -17,6 +17,11 @@ Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. St
 <br/>
 =============== 3 ===============
 <br/>
+setState() digunakan untuk memberi sinyal framework bahwa isi dari sebuah `StatefulWidget` telah berubah dan butuh dicek.
+setState() hanya berdampak pada variabel atau data yang berada dalam State dari widget tersebut, khususnya variabel-variabel yang digunakan dalam metode build. Variabel yang terpengaruh antara lain:
+1. Variabel dengan nilai dinamis atau bisa berubah: Variabel seperti int counter, String text, atau List items yang diinisialisasi dalam State widget bisa diubah, dan setState() akan memperbarui tampilan sesuai perubahan tersebut.
+2. Data yang ditampilkan di UI: Semua data yang digunakan di dalam build method, seperti teks, gambar, ukuran, atau warna, jika terhubung dengan variabel dalam state yang berubah, akan terpengaruh oleh setState().
+3. Properti widget: Jika suatu properti dari widget bergantung pada nilai variabel dalam State, maka perubahan nilai tersebut juga mempengaruhi tampilan widget. Misalnya, properti color dari widget Container yang bergantung pada nilai dari variabel dalam state.
 <br/>
 =============== 4 ===============
 <br/>

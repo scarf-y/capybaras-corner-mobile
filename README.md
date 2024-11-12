@@ -134,7 +134,6 @@ Widget form input lainnya, yang sering dipakai:
 - Checkbox: Untuk input yang hanya memerlukan pilihan "ya" atau "tidak," seperti setuju pada syarat dan ketentuan.
 - Radio: Jika pilihan terbatas pada satu opsi dari beberapa, misalnya, pilihan jenis pembayaran.
 - Slider: Berguna untuk memilih nilai numerik dalam rentang tertentu, seperti intensitas atau level sesuatu.
-- Elemen lain yang mungkin tersedia tetapi jarang digunakan bisa termasuk:
 - Switch: Biasanya digunakan untuk pengaturan aktif/nonaktif, misalnya, notifikasi aplikasi.
 - DatePicker: Menampilkan kalender untuk memilih tanggal, seperti pada formulir pemesanan.
 - TimePicker: Untuk memilih waktu spesifik, misalnya untuk pengaturan jadwal.

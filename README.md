@@ -120,15 +120,27 @@ Row(
 )
 ```
 <br/>
-=============== 1 ===============
+=============== 3 ===============
 <br/>
-Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+1. TextFormField: adalah widget dasar yang sering dipakai untuk input teks seperti nama, alamat, atau deskripsi. Elemen ini bisa digunakan dengan validator untuk memeriksa validitas input.
+Dalam Project ini saya hanya menggunakan TextFormField, mungkin untuk pemilihan ``Chill Level`` saya bisa menggunakan slider.
+
+Widget form input lainnya, yang sering dipakai:
+- DropdownButtonFormField: Sering digunakan untuk memilih dari sekumpulan pilihan tetap, seperti kategori produk atau jenis kelamin.
+- Checkbox: Untuk input yang hanya memerlukan pilihan "ya" atau "tidak," seperti setuju pada syarat dan ketentuan.
+- Radio: Jika pilihan terbatas pada satu opsi dari beberapa, misalnya, pilihan jenis pembayaran.
+- Slider: Berguna untuk memilih nilai numerik dalam rentang tertentu, seperti intensitas atau level sesuatu.
+- Elemen lain yang mungkin tersedia tetapi jarang digunakan bisa termasuk:
+- Switch: Biasanya digunakan untuk pengaturan aktif/nonaktif, misalnya, notifikasi aplikasi.
+- DatePicker: Menampilkan kalender untuk memilih tanggal, seperti pada formulir pemesanan.
+- TimePicker: Untuk memilih waktu spesifik, misalnya untuk pengaturan jadwal.
+
 <br/>
-=============== 1 ===============
+=============== 4 ===============
 <br/>
-Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+
 <br/>
-=============== 1 ===============
+=============== 5 ===============
 <br/>
-Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+
 <br/>

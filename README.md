@@ -73,3 +73,62 @@ Kembali ke Class `MyHomePage`, tambahkan list of `ItemHomePage` sebagai button-b
 Kemudian untuk menunjukkan bentuk button dan logic buttonnya, kita buat class `ItemCard`. yang akan memiliki variable class nya yaitu instance dari `ItemHomePage`. Build context dari `ItemCard` akan mengembalikan widget Material dengan color dan icon diambil dari attribut `ItemHomePage`. Kemudian ketika di-click, akan menunjukkan snackbar yang memberi pesan "Kamu telah menekan tombol (nama tombol)".
 
 Setelah itu, kita perlu mengintegrasikan class-class ini ke Home Page. Widget yang akan di-build akan berupa scaffold yang mana kita harus mendefine AppBar dan Body nya. 
+<br/>
+
+## Tugas 8
+
+1. Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
+2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+3. Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+
+=============== 1 ===============
+<br/>
+Const di flutter berguna sebagai penanda bahwa suatu variable itu konstan. Berbeda dengan final, const ditentukan nilainya saat compile time jadi dapat mempercepat jalannya aplikasi. Sebaiknya gunakan const pada variable/pemanggilan fungsi yang tidak akan berubah statenya. Const sebaiknya tidak digunakan pada variable atau instansiasi suatu class yang akan membutuhkan/dapat nilainya ketika runtime.
+<br/>
+=============== 2 ===============
+<br/>
+1. Widget Column
+Column adalah widget yang menyusun elemen-elemen secara vertikal (dari atas ke bawah). Widget ini berguna untuk menumpuk komponen secara vertikal, misalnya daftar teks atau tombol yang harus disusun dalam satu kolom.
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center, // Menempatkan widget di tengah vertikal
+  crossAxisAlignment: CrossAxisAlignment.center, // Menempatkan widget di tengah horizontal
+  children: [
+    Text('Hello'),
+    Text('Welcome to Flutter'),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text('Click Me'),
+    ),
+  ],
+)
+```
+2. Widget Row
+Row adalah widget yang menyusun elemen-elemen secara horizontal (dari kiri ke kanan). Widget ini sering digunakan ketika Anda ingin menempatkan elemen-elemen yang perlu ditampilkan secara berdampingan, misalnya ikon dan teks dalam satu baris.
+```dart
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Menyebar widget secara merata
+  crossAxisAlignment: CrossAxisAlignment.center, // Menempatkan widget di tengah vertikal
+  children: [
+    Icon(Icons.home, size: 32),
+    Text('Home'),
+    Icon(Icons.settings, size: 32),
+    Text('Settings'),
+  ],
+)
+```
+<br/>
+=============== 1 ===============
+<br/>
+Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+<br/>
+=============== 1 ===============
+<br/>
+Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+<br/>
+=============== 1 ===============
+<br/>
+Stateless dan stateful adalah dua jenis keadaan widget yang ada pada flutter. Stateless widget artinya adalah widget yang menampilkan data yang tetap/konstan atau tidak sering berubah. Kebalikannya, stateful widget digunakan ketika kita ingin menampilkan data yang sering berubah selama berjalannya aplikasi. Contoh simple stateful widget seperti label yang menunjukkan sebuah counter, tentu akan menunjukkan angka yang berubah (incrementing) sedangkan contoh stateless misalkan label yang menunjukkan nama aplikasi.
+<br/>

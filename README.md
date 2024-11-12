@@ -1,6 +1,7 @@
 ﻿# capybaras-corner-mobile
+<details>
+<summary> ## Tugas 7 </summary>
 
-## Tugas 7
 
 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget, dan jelaskan perbedaan dari keduanya.
 2. Sebutkan widget apa saja yang kamu gunakan pada proyek ini dan jelaskan fungsinya.
@@ -74,9 +75,12 @@ Kemudian untuk menunjukkan bentuk button dan logic buttonnya, kita buat class `I
 
 Setelah itu, kita perlu mengintegrasikan class-class ini ke Home Page. Widget yang akan di-build akan berupa scaffold yang mana kita harus mendefine AppBar dan Body nya. 
 <br/>
+</details>
 
+<details>
+<summary>  
 ## Tugas 8
-
+</summary>
 1. Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
 2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
 3. Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
@@ -123,7 +127,7 @@ Row(
 =============== 3 ===============
 <br/>
 1. TextFormField: adalah widget dasar yang sering dipakai untuk input teks seperti nama, alamat, atau deskripsi. Elemen ini bisa digunakan dengan validator untuk memeriksa validitas input.
-Dalam Project ini saya hanya menggunakan TextFormField, mungkin untuk pemilihan ``Chill Level`` saya bisa menggunakan slider.
+Dalam Project ini saya hanya menggunakan TextFormField, mungkin untuk pemilihan `Chill Level` saya bisa menggunakan slider.
 
 Widget form input lainnya, yang sering dipakai:
 - DropdownButtonFormField: Sering digunakan untuk memilih dari sekumpulan pilihan tetap, seperti kategori produk atau jenis kelamin.
@@ -144,3 +148,4 @@ Widget form input lainnya, yang sering dipakai:
 <br/>
 
 <br/>
+</details>

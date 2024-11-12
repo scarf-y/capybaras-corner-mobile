@@ -1,6 +1,6 @@
 ﻿# capybaras-corner-mobile
 <details>
-<summary> ## Tugas 7 </summary>
+<summary> Tugas 7 </summary>
 
 
 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget, dan jelaskan perbedaan dari keduanya.
@@ -78,9 +78,7 @@ Setelah itu, kita perlu mengintegrasikan class-class ini ke Home Page. Widget ya
 </details>
 
 <details>
-<summary>  
-## Tugas 8
-</summary>
+<summary> Tugas 8 </summary>
 1. Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
 2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
 3. Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
@@ -142,10 +140,10 @@ Widget form input lainnya, yang sering dipakai:
 <br/>
 =============== 4 ===============
 <br/>
-
+Pada tanggal readme ini ditulis ``12/11/2024``, saya baru menggunakan widget ``ThemeData`` pada ``main.dart`` untuk mengatur theme color aplikasi. Saya juga menerapkan ``IconThemeData`` pada bagian AppBar di ``menu.dart``. Untuk pengaplikasian theme warna aplikasinya, dapat menggunakan ``Theme.of(context)``.
 <br/>
 =============== 5 ===============
 <br/>
-
+Tentu saja dengan widget Navigator adalah yang paling umum, cara kerjanya bisa dibayangkan sebagai stack of screens. Dimana ketika ingin berganti screen (dari top of stack) kita bisa lakukan push sebuah screen(widget), pop, ataupun mengganti top of stack dengan screen lain secara langsung. Penggunaan stack ini memungkinkan pengguna untuk rollback ke screen sebelumnya (dengan pop stack).
 <br/>
 </details>

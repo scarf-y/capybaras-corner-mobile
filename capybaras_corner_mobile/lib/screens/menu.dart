@@ -1,6 +1,9 @@
+
 import 'package:capybaras_corner_mobile/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:capybaras_corner_mobile/widgets/left_drawer.dart';
+
+
 
 class MyHomePage extends StatelessWidget {
   final String npm = '2306213003'; // NPM
@@ -16,6 +19,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final request = context.watch<CookieRequest>();
     // Scaffold menyediakan struktur dasar halaman dengan AppBar dan body.
     return Scaffold(
       drawer: const LeftDrawer(),

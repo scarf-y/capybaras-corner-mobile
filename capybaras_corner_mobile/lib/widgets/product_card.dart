@@ -87,7 +87,7 @@ class ItemCard extends StatelessWidget {
                 
                 Navigator.pushAndRemoveUntil(context,
                   MaterialPageRoute(builder: (context) => const LoginPage()),
-                        (Route) => false
+                        (route) => false
                 );
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(

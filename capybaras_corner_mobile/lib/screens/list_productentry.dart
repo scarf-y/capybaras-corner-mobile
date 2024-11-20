@@ -1,3 +1,4 @@
+import 'package:capybaras_corner_mobile/screens/product_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:capybaras_corner_mobile/models/product_entry.dart';
 
@@ -35,7 +36,8 @@ class _ProductEntryPageState extends State<ProductEntryPage> {
     final request = context.watch<CookieRequest>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Capybara List'),
+        title: const Text('Capybara List', style: TextStyle(color: Colors.white),),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       drawer: const LeftDrawer(),
       body: FutureBuilder(
@@ -73,11 +75,19 @@ class _ProductEntryPageState extends State<ProductEntryPage> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      Text("Harga: ${snapshot.data![index].fields.price}"),
-                      const SizedBox(height: 10),
-                      Text("Deskripsi: ${snapshot.data![index].fields.description}"),
-                      const SizedBox(height: 10),
-                      Text("Chill level: ${snapshot.data![index].fields.chillLevel}")
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ProductDetailPage(
+                                product: snapshot.data![index],
+                              ),
+                            ),
+                          );
+                        },
+                        child: const Text("View Details"),
+                      ),
                     ],
                   ),
                 ),

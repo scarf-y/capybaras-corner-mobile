@@ -188,14 +188,14 @@ Library http pada tugas ini digunakan untuk melakukan komunikasi antara aplikasi
 =============== 3 ===============
 <br/>
 *CookieRequest* digunakan untuk menangani komunikasi HTTP dengan server, terutama yang membutuhkan autentikasi berbasis cookie. Fungsinya adalah:
-Mengelola cookie: Menyimpan dan mengirim cookie untuk menjaga sesi pengguna.
-Mempermudah request HTTP: Menangani pengiriman data (GET/POST) tanpa perlu mengatur cookie secara manual.
-Otentikasi otomatis: Memastikan pengguna yang login tetap terautentikasi saat mengakses data atau halaman tertentu.
+- Mengelola cookie: Menyimpan dan mengirim cookie untuk menjaga sesi pengguna.
+- Mempermudah request HTTP: Menangani pengiriman data (GET/POST) tanpa perlu mengatur cookie secara manual.
+- Otentikasi otomatis: Memastikan pengguna yang login tetap terautentikasi saat mengakses data atau halaman tertentu.
 
 Kenapa Perlu Dibagikan ke Semua Komponen?
-Menjaga sesi: Semua halaman butuh akses ke cookie agar pengguna tidak logout saat berpindah halaman.
-Konsistensi data: Instance yang sama mencegah perbedaan data atau cookie antar halaman.
-Efisiensi: Menghindari duplikasi kerja dan meminimalkan error saat berkomunikasi dengan server.
+- Menjaga sesi: Semua halaman butuh akses ke cookie agar pengguna tidak logout saat berpindah halaman.
+- Konsistensi data: Instance yang sama mencegah perbedaan data atau cookie antar halaman.
+- Efisiensi: Menghindari duplikasi kerja dan meminimalkan error saat berkomunikasi dengan server.
 <br/>
 =============== 4 ===============
 <br/>

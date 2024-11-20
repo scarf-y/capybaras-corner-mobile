@@ -178,14 +178,16 @@ Jika tidak membuat model, error tidak selalu terjadi namun ada beberapa hal yang
 =============== 2 ===============
 <br/>
 Library http pada tugas ini digunakan untuk melakukan komunikasi antara aplikasi dengan server melalui protokol HTTP. Fungsi utamanya meliputi:
-* Mengirim Permintaan HTTP: http memungkinkan aplikasi mengirim permintaan HTTP seperti GET, POST, PUT, dan DELETE ke server untuk mengambil atau mengubah data.
-* Mengelola Respons dari Server: Library ini memproses respons dari server, seperti data JSON yang dikembalikan, status kode HTTP (misalnya, 200 untuk sukses atau 404 untuk tidak ditemukan), dan header respons lainnya.
-* Parsing Data JSON: Data yang diterima dari server biasanya dalam format JSON. Dengan http, data ini dapat dengan mudah diubah menjadi objek Dart agar lebih mudah digunakan.
-* Mendukung Aplikasi Berbasis REST API: http memudahkan integrasi aplikasi dengan REST API, seperti dalam tugas ini, di mana aplikasi Anda berkomunikasi dengan backend untuk mengambil atau mengirimkan data.
+
+* Mengirim Permintaan HTTP: http memungkinkan aplikasi mengirim permintaan HTTP seperti GET, POST, PUT, dan DELETE ke server untuk mengambil atau mengubah data.<br/>
+* Mengelola Respons dari Server: Library ini memproses respons dari server, seperti data JSON yang dikembalikan, status kode HTTP (misalnya, 200 untuk sukses atau 404 untuk tidak ditemukan), dan header respons lainnya.<br/>
+* Parsing Data JSON: Data yang diterima dari server biasanya dalam format JSON. Dengan http, data ini dapat dengan mudah diubah menjadi objek Dart agar lebih mudah digunakan. <br/>
+* Mendukung Aplikasi Berbasis REST API: http memudahkan integrasi aplikasi dengan REST API, seperti dalam tugas ini, di mana aplikasi Anda berkomunikasi dengan backend untuk mengambil atau mengirimkan data.<br/>
+
 <br/>
 =============== 3 ===============
 <br/>
-**CookieRequest** digunakan untuk menangani komunikasi HTTP dengan server, terutama yang membutuhkan autentikasi berbasis cookie. Fungsinya adalah:
+*CookieRequest* digunakan untuk menangani komunikasi HTTP dengan server, terutama yang membutuhkan autentikasi berbasis cookie. Fungsinya adalah:
 Mengelola cookie: Menyimpan dan mengirim cookie untuk menjaga sesi pengguna.
 Mempermudah request HTTP: Menangani pengiriman data (GET/POST) tanpa perlu mengatur cookie secara manual.
 Otentikasi otomatis: Memastikan pengguna yang login tetap terautentikasi saat mengakses data atau halaman tertentu.
